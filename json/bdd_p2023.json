@@ -1,0 +1,843 @@
+[
+  {
+    "id": "p2023_01",
+    "question": "La commande CREATE TABLE ord_items (voir contexte) retourne une erreur. Quelle en est la cause ?",
+    "options": [
+      "La PRIMARY KEY ne peut pas être composée de deux attributs (ord_no, item_no)",
+      "BETWEEN ne peut pas être utilisée dans une contrainte CHECK",
+      "client_id n'est pas PRIMARY KEY dans la table orders",
+      "client_id n'est pas unique dans la table orders",
+      "La référence de la FOREIGN KEY ord_fk n'existe pas dans la table ORDERS"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "client_id n'est pas unique dans la table orders"
+  },
+  {
+    "id": "p2023_02",
+    "question": "Table T(A:int, B:int, C:int). Lesquelles des requêtes suivantes sont correctes par rapport au standard SQL ?",
+    "options": [
+      "select B, count(A) from T group by A, B having count(B) > A",
+      "select A, count(B) from T group by A, B having B = 0",
+      "select A, count(C) from T group by A, B having max(C) = A",
+      "select count(A), B from T group by B having A = B"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "select B, count(A) from T group by A, B having count(B) > A",
+      "select A, count(B) from T group by A, B having B = 0",
+      "select A, count(C) from T group by A, B having max(C) = A"
+    ]
+  },
+  {
+    "id": "p2023_03",
+    "question": "Un administrateur veut afficher les villes où count(*) > 10 000. Quelle requête SQL ?",
+    "options": [
+      "SELECT ville, count(*) FROM table_ville GROUP BY ville HAVING count(*)>10000",
+      "SELECT ville, count(*) FROM table_ville GROUP BY ville count(*)>10000",
+      "SELECT ville, count(*) FROM table_ville GROUP BY ville WHERE count(id_ville)>10000",
+      "SELECT ville, count(*) FROM table_ville GROUP BY ville WHERE count(*)>10000"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "SELECT ville, count(*) FROM table_ville GROUP BY ville HAVING count(*)>10000"
+  },
+  {
+    "id": "p2023_04",
+    "question": "SELECT Nom, Age FROM Etudiants WHERE Age > 20 ORDER BY Age permet de :",
+    "options": [
+      "Classer les étudiants par ordre alphabétique",
+      "Avoir le nombre d'étudiants de plus de 20 ans",
+      "Lister les nom et âges de tous les étudiants",
+      "Lister les noms et âges des étudiants de plus de 20 ans triés par âge",
+      "Lister les noms et âges des étudiants de plus de 20 ans classés par âge",
+      "Lister les noms et âges des étudiants de plus de 20 ans groupés par âge"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Lister les noms et âges des étudiants de plus de 20 ans triés par âge",
+      "Lister les noms et âges des étudiants de plus de 20 ans classés par âge"
+    ]
+  },
+  {
+    "id": "p2023_05",
+    "question": "Sans type de verrou demandé lors d'une mise à jour de plusieurs lignes, quels verrous ?",
+    "options": [
+      "Verrou exclusif sur la table (méthode la plus rapide)",
+      "Pas de verrouillage — niveau par défaut NONE",
+      "Verrous partagés sur la table et chaque ligne",
+      "Verrou exclusif sur chaque ligne et verrou partagé sur la table"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Verrou exclusif sur chaque ligne et verrou partagé sur la table"
+  },
+  {
+    "id": "p2023_06",
+    "question": "Laquelle de ces commandes mettra fin à une transaction ?",
+    "options": [
+      "GRANT",
+      "CREATE",
+      "SET AUTOCOMMIT ON",
+      "SAVEPOINT"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "GRANT",
+      "SET AUTOCOMMIT ON"
+    ]
+  },
+  {
+    "id": "p2023_07",
+    "question": "Après UPDATE sur matable, quelle commande rend la modification permanente ?",
+    "options": [
+      "Rien — le changement est permanent",
+      "SET AUTOCOMMIT = 1",
+      "GRANT SELECT ON matable TO ...",
+      "COMMIT",
+      "COMMIT matable"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "GRANT SELECT ON matable TO ...",
+      "COMMIT"
+    ]
+  },
+  {
+    "id": "p2023_08",
+    "question": "Connexion L3A/L3B@L3C:3306/L3D — à quelle base êtes-vous connecté ?",
+    "options": [
+      "L3D",
+      "L3C",
+      "L3B",
+      "L3A"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "L3D"
+  },
+  {
+    "id": "p2023_09",
+    "question": "Deux utilisateurs consultent la même table. Quelles affirmations sont correctes ?",
+    "options": [
+      "Ils ne voient jamais le même contenu",
+      "Il est possible qu'ils ne voient pas le même contenu",
+      "Ils voient toujours le même contenu",
+      "Il est possible qu'ils voient le même contenu"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Il est possible qu'ils ne voient pas le même contenu",
+      "Il est possible qu'ils voient le même contenu"
+    ]
+  },
+  {
+    "id": "p2023_10",
+    "question": "Quelle commande n'est pas valide dans une procédure stockée PL/SQL ?",
+    "options": [
+      "RETURN",
+      "LOOP",
+      "DROP",
+      "IF"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "RETURN"
+  },
+  {
+    "id": "p2023_11",
+    "question": "Lesquelles ne font pas partie des fonctions de groupe SQL ?",
+    "options": [
+      "AVERAGE",
+      "MIN",
+      "AVG",
+      "MAXI"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "AVERAGE",
+      "MAXI"
+    ]
+  },
+  {
+    "id": "p2023_12",
+    "question": "Quels types sont définis dans MySQL ?",
+    "options": [
+      "DATE_TIME",
+      "INTIGER",
+      "CLOB",
+      "BLOB"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "CLOB",
+      "BLOB"
+    ]
+  },
+  {
+    "id": "p2023_13",
+    "question": "Vue V_EMP (agrégation sur employees). UPDATE V_EMP SET SOMME=20000 WHERE DEPARTMENT_ID=20 — quel énoncé est correct ?",
+    "options": [
+      "La colonne SOMME de la vue sera modifiée pour le département 20",
+      "On ne peut pas modifier la colonne SOMME à partir de la vue V_EMP",
+      "La colonne SOMME de EMPLOYEES sera modifiée pour le département 20",
+      "La colonne SALARY de EMPLOYEES sera modifiée pour le département 20"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "On ne peut pas modifier la colonne SOMME à partir de la vue V_EMP"
+  },
+  {
+    "id": "p2023_14",
+    "question": "Table T(A int PK, B int, C int). SELECT A, B FROM T renvoie le même résultat que :",
+    "options": [
+      "select A, B from T where B is not null",
+      "select A, B from T where A is not null",
+      "select distinct A, B from T",
+      "select A, B from T where A <> null"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "select A, B from T where A is not null",
+      "select distinct A, B from T"
+    ]
+  },
+  {
+    "id": "p2023_15",
+    "question": "Script de contrôle événementiel vers la BDD — de quel objet s'agit-il ?",
+    "options": [
+      "Verrous",
+      "Procédure stockée",
+      "Vue",
+      "Trigger"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Trigger"
+  },
+  {
+    "id": "p2023_16",
+    "question": "Quelle expression booléenne vaut true ?",
+    "options": [
+      "'hello' like '%ello'",
+      "'hello' = '_hello'",
+      "'hello' like 'h%l%l'",
+      "'hello' like '%hello'"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "'hello' like '%ello'",
+      "'hello' like '%hello'"
+    ]
+  },
+  {
+    "id": "p2023_17",
+    "question": "SCOTT : deadlock sur UPDATE EMP causé par JIM. Deux affirmations vraies sur la session SCOTT ?",
+    "options": [
+      "SCOTT doit réexécuter la dernière commande après avoir validé la transaction",
+      "SCOTT doit faire COMMIT ou ROLLBACK pour permettre à JIM de poursuivre",
+      "La session est terminée et JIM peut poursuivre",
+      "La session est annulée et JIM peut poursuivre"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "SCOTT doit réexécuter la dernière commande après avoir validé la transaction",
+      "SCOTT doit faire COMMIT ou ROLLBACK pour permettre à JIM de poursuivre"
+    ]
+  },
+  {
+    "id": "p2023_18",
+    "question": "Table T(A int PK, B int). Quelle requête peut produire des doublons ?",
+    "options": [
+      "select B from T",
+      "select B from T where B = 0",
+      "select * from T",
+      "select A from T where A = 0"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "select B from T",
+      "select B from T where B = 0"
+    ]
+  },
+  {
+    "id": "p2023_19",
+    "question": "Table T(A,B,C). Requêtes correctes selon le standard SQL ?",
+    "options": [
+      "select C, count(A) from T group by A, B",
+      "select A, count(B) from T group by A, B",
+      "select A, B from T group by B",
+      "select A, count(C) from T group by A, B"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "select A, count(B) from T group by A, B",
+      "select A, count(C) from T group by A, B"
+    ]
+  },
+  {
+    "id": "p2023_20",
+    "question": "Tables Pieces et Produits — quelles contraintes mettre en place ?",
+    "options": [
+      "FK sur Numéro produit dans Pieces",
+      "FK sur Numéro pièce dans Produits",
+      "UNIQUE sur Numéro pièce dans Pieces",
+      "UNIQUE sur Numéro produit dans Produits"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "FK sur Numéro produit dans Pieces",
+      "UNIQUE sur Numéro produit dans Produits"
+    ]
+  },
+  {
+    "id": "p2023_21",
+    "question": "ORDER BY — deux affirmations correctes ?",
+    "options": [
+      "Combinaison possible avec opérations arithmétiques",
+      "C'est la dernière clause d'une requête SELECT",
+      "S'exécute en premier",
+      "S'exécute seulement avec HAVING"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Combinaison possible avec opérations arithmétiques",
+      "C'est la dernière clause d'une requête SELECT"
+    ]
+  },
+  {
+    "id": "p2023_22",
+    "question": "Affirmations vraies sur NULL ?",
+    "options": [
+      "NULL ne s'applique qu'aux types numériques",
+      "NULL signifie valeur manquante ou non applicable",
+      "NULL et 'NULL' sont équivalents",
+      "NULL et null sont équivalents"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "NULL signifie valeur manquante ou non applicable",
+      "NULL et null sont équivalents"
+    ]
+  },
+  {
+    "id": "p2023_23",
+    "question": "Erreur sur : SELECT promo_categorie, AVG(promo_prix) AS MOYPRIX, AVG(promo_prix)*.25 AS MOYPROMO FROM PROMOTIONS ... GROUP BY MOYPRIX ORDER BY MOYPROMO — quelle clause ?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "SELECT",
+      "WHERE"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "GROUP BY"
+  },
+  {
+    "id": "p2023_24",
+    "question": "Commande SQL modifiant la structure de MyTable :",
+    "options": [
+      "UPDATE TABLE MyTable",
+      "UPDATE MyTable",
+      "ALTER MyTable",
+      "ALTER TABLE MyTable"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "ALTER TABLE MyTable"
+  },
+  {
+    "id": "p2023_25",
+    "question": "Package java.sql pour exécuter un UPDATE MySQL depuis Java ?",
+    "options": [
+      "preparedStatement",
+      "CallableStatement",
+      "Connexion",
+      "Statement",
+      "PreparedStatement"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Statement",
+      "PreparedStatement"
+    ]
+  },
+  {
+    "id": "p2023_26",
+    "question": "CLIENTS : client_ville='Paris', prenom='ABIGAIL'. Résultat de SELECT INITCAP(client_prenom||' '||UPPER(SUBSTR(client_ville,LENGTH(client_ville),2))) ... ?",
+    "options": [
+      "Abigail IS",
+      "Abigail Pa",
+      "Abigail PA",
+      "Un message d'erreur"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Abigail Pa"
+  },
+  {
+    "id": "p2023_27",
+    "question": "Tables T(A,B) et S(B,C). Affirmations vraies ?",
+    "options": [
+      "T natural left outer join S contient au moins autant de tuples que T natural right outer join S",
+      "T natural inner join S contient plus de tuples que T natural join S",
+      "T natural outer join S contient au moins autant de tuples que T natural left outer join S",
+      "T natural outer join S contient au moins autant de tuples que T natural join S"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "T natural outer join S contient au moins autant de tuples que T natural left outer join S",
+      "T natural outer join S contient au moins autant de tuples que T natural join S"
+    ]
+  },
+  {
+    "id": "p2023_28",
+    "question": "Une vue est tout simplement une requête SELECT à laquelle on donne un nom.",
+    "options": [
+      "Faux",
+      "Vrai"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Vrai"
+  },
+  {
+    "id": "p2023_29",
+    "question": "Commandes définissant une clé primaire sur latable ?",
+    "options": [
+      "ALTER TABLE latable MODIFY CONSTRAINT ...",
+      "CREATE TABLE latable (PK_Table PRIMARY KEY ...)",
+      "CREATE TABLE latable (lacolonne PRIMARY KEY ...)",
+      "ALTER TABLE latable ADD CONSTRAINT ..."
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "ALTER TABLE latable MODIFY CONSTRAINT ...",
+      "ALTER TABLE latable ADD CONSTRAINT ..."
+    ]
+  },
+  {
+    "id": "p2023_30",
+    "question": "Script : CREATE ROLE; GRANT CREATE table; GRANT SELECT table; GRANT CONNECT — quelle ligne erreur ?",
+    "options": [
+      "Ligne 4 : rôle ne peut pas avoir privilège système + table",
+      "Ligne 2 : seuls utilisateurs peuvent créer tables",
+      "Ligne 3 : SELECT TABLE n'est pas un privilège",
+      "Ligne 1 : seuls utilisateurs ont des mots de passe"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Ligne 3 : SELECT TABLE n'est pas un privilège"
+  },
+  {
+    "id": "p2023_31",
+    "question": "Les commandes GRANT et REVOKE s'appliquent sur :",
+    "options": [
+      "Les vues et les tables",
+      "Les vues matérialisées et les tables uniquement",
+      "Les vues uniquement",
+      "Les tables uniquement"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Les vues et les tables"
+  },
+  {
+    "id": "p2023_32",
+    "question": "Commandes créant la vue V1 :",
+    "options": [
+      "CREATE VIEW V1 ...",
+      "CREATE OR REPLACE VIEW V1 ...",
+      "REPLACE VIEW V1 ...",
+      "INSERT VIEW V1 ..."
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "CREATE VIEW V1 ...",
+      "CREATE OR REPLACE VIEW V1 ..."
+    ]
+  },
+  {
+    "id": "p2023_33",
+    "question": "À quoi sert une vue ?",
+    "options": [
+      "Assurer la concurrence d'accès",
+      "Assurer la tolérance aux pannes",
+      "Simplifier les requêtes complexes",
+      "Assurer l'indépendance logique"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Simplifier les requêtes complexes",
+      "Assurer l'indépendance logique"
+    ]
+  },
+  {
+    "id": "p2023_34",
+    "question": "Validation implicite des transactions sous MySQL ?",
+    "options": [
+      "À chaque opération si AUTOCOMMIT vaut 0",
+      "Lors de la déconnexion (fermeture session)",
+      "Lors de la déconnexion suite à une panne",
+      "À chaque opération si AUTOCOMMIT vaut 1"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Lors de la déconnexion (fermeture session)",
+      "À chaque opération si AUTOCOMMIT vaut 1"
+    ]
+  },
+  {
+    "id": "p2023_35",
+    "question": "Expression \"A between 10 and 100\" (A int) équivalente à :",
+    "options": [
+      "10 < A and A <= 100",
+      "10 <= A <= 100",
+      "100 >= A and A >= 10",
+      "100 > A and A > 10",
+      "10 <= A and A < 100",
+      "10 <= A and A <= 100"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "100 >= A and A >= 10",
+      "10 <= A and A <= 100"
+    ]
+  },
+  {
+    "id": "p2023_36",
+    "question": "Quel privilège système permet de se connecter à une base ?",
+    "options": [
+      "Create session",
+      "Create user",
+      "Grant",
+      "Create table"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Create user"
+  },
+  {
+    "id": "p2023_37",
+    "question": "Si X => Y et X => Z, quelle affirmation est vraie ?",
+    "options": [
+      "Y => Z",
+      "X => Y,Z",
+      "Y,Z => X",
+      "Z => Y"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "X => Y,Z"
+  },
+  {
+    "id": "p2023_38",
+    "question": "Quelle dépendance est dite \"triviale\" ?",
+    "options": [
+      "A,B -> C",
+      "A,B -> B",
+      "B,C -> C,D",
+      "A -> A,C"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "A,B -> B"
+  },
+  {
+    "id": "p2023_39",
+    "question": "Si X => Y et W,Y => Z, quelle affirmation est vraie ?",
+    "options": [
+      "X => Z",
+      "Z => X",
+      "W,X => Z",
+      "Y => Z"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "W,X => Z"
+  },
+  {
+    "id": "p2023_40",
+    "question": "SALARIES, STAGE, EFFECTUER (voir contexte). Un salarié ne peut faire qu'un seul stage — vrai ou faux ?",
+    "options": [
+      "Vrai",
+      "Faux"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Faux"
+  },
+  {
+    "id": "p2023_41",
+    "question": "EMPLOYE(Num, Nom, Catégorie, Salaire), Num PK, Catégorie -> Salaire. Corriger pour 3FN ?",
+    "options": [
+      "Décomposer en EMPLOYE et SALAIRE",
+      "Supprimer Catégorie",
+      "Ajouter CategorieSalaire",
+      "Pas de problème"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Décomposer en EMPLOYE et SALAIRE"
+  },
+  {
+    "id": "p2023_42",
+    "question": "Si X => Y et Y => Z, quelle affirmation est vraie ?",
+    "options": [
+      "Y => X",
+      "X => Z",
+      "Y => Y",
+      "Z => X"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "X => Z"
+  },
+  {
+    "id": "p2023_43",
+    "question": "Vrai concernant les associations dans un MCD ?",
+    "options": [
+      "Une association est toujours transformée en table",
+      "Une association peut être transformée en table",
+      "Une association n'est jamais transformée en table",
+      "Une association peut engendrer une clé primaire composée"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Une association peut être transformée en table",
+      "Une association peut engendrer une clé primaire composée"
+    ]
+  },
+  {
+    "id": "p2023_44",
+    "question": "R(A,B,C,D), clé AB, F={AB->CD, A->B, D->CB}. Ce schéma est en :",
+    "options": [
+      "1ère Forme Normale",
+      "3ème Forme Normale",
+      "2ème Forme Normale",
+      "n'est pas en 1FN"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "1ère Forme Normale",
+      "2ème Forme Normale"
+    ]
+  },
+  {
+    "id": "p2023_45",
+    "question": "Quelles propriétés font partie d'ACID ?",
+    "options": [
+      "Durabilité",
+      "Concurrence",
+      "Cooperation",
+      "Isolation",
+      "Atomicité"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Durabilité",
+      "Isolation",
+      "Atomicité"
+    ]
+  },
+  {
+    "id": "p2023_46",
+    "question": "CLIENT(numero, nom, prenom, dateDinscription), PK numero. Pourquoi prenom dépend de numero ?",
+    "options": [
+      "À une valeur de numero correspond une seule valeur de prenom",
+      "À partir du prénom on retrouve le numéro",
+      "Un client peut avoir plusieurs prénoms",
+      "Chaque ligne concerne un client identifié par prenom"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "À une valeur de numero correspond une seule valeur de prenom"
+  },
+  {
+    "id": "p2023_47",
+    "question": "Couverture minimale ? 1:NomClient->TypeClient 2:TypeClient->CategorieClient 3:NomClient->CategorieClient 4:NumCommande->DescCommande 5:NumCommande,NomClient->DateCommande",
+    "options": [
+      "{1,3,4,5}",
+      "{1,2,5}",
+      "{1,3,4}",
+      "{1,2,4,5}"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "{1,2,4,5}"
+  },
+  {
+    "id": "p2023_48",
+    "question": "Quelles appellations ne sont pas utilisées dans un MCD ?",
+    "options": [
+      "Objet",
+      "Fonction",
+      "Entité",
+      "Attribut"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Objet",
+      "Fonction"
+    ]
+  },
+  {
+    "id": "p2023_49",
+    "question": "R(A,B,C,D,E), DF={AB->CDE; B->C; AC->BDE; C->BD; B->E}. Clé(s) candidate(s) ?",
+    "options": [
+      "B,C",
+      "A,B",
+      "A,C",
+      "A,B,C"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "A,B",
+      "A,C"
+    ]
+  },
+  {
+    "id": "p2023_50",
+    "question": "Dans un MCD, qu'est-ce qu'une cardinalité ?",
+    "options": [
+      "Élément identifiant un tuple",
+      "Rôle entre association et entité",
+      "Nombre min et max d'instances dans la relation",
+      "Relation logique entre deux tables"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Nombre min et max d'instances dans la relation"
+  },
+  {
+    "id": "p2023_51",
+    "question": "CLIENT/Num_client, FACTURE/Num_facture FK Num_client. Une facture ne concerne qu'un seul client ?",
+    "options": [
+      "Non",
+      "Oui"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Oui"
+  },
+  {
+    "id": "p2023_52",
+    "question": "PRODUIT(Codeprod, Numcat, Nomprod), PK (Codeprod, Numcat), FK Numcat. En 2FN ?",
+    "options": [
+      "Non",
+      "Oui"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Non"
+  },
+  {
+    "id": "p2023_53",
+    "question": "Dans un modèle relationnel, une table peut contenir plusieurs tuples identiques.",
+    "options": [
+      "Vrai",
+      "Faux"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Faux"
+  },
+  {
+    "id": "p2023_54",
+    "question": "Quelle forme normale exige l'absence de DF entre attributs non clés ?",
+    "options": [
+      "2FN",
+      "3FN",
+      "Aucune des 3 premières",
+      "1FN"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "3FN"
+  },
+  {
+    "id": "p2023_55",
+    "question": "Contraintes d'intégrité dans une BDD :",
+    "options": [
+      "Contrainte d'agrégation",
+      "Contrainte de clé primaire",
+      "Contrainte de généralisation/spécialisation",
+      "Contrainte de domaine"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Contrainte de clé primaire",
+      "Contrainte de domaine"
+    ]
+  },
+  {
+    "id": "p2023_56",
+    "question": "Contraintes pour une décomposition en 3FN autorisée ?",
+    "options": [
+      "Nombre de relations obtenues ne doit pas dépasser 2",
+      "Couverture minimale des DF conservée",
+      "Toutes les DF doivent être conservées",
+      "Décomposition sans perte"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Couverture minimale des DF conservée",
+      "Décomposition sans perte"
+    ]
+  },
+  {
+    "id": "p2023_57",
+    "question": "CLIENT(numero PK, nom, prenom, dateDinscription). Pourquoi dateDinscription ne dépend pas de prenom ?",
+    "options": [
+      "Un attribut ne dépend que d'un attribut clé primaire",
+      "On ne peut pas déterminer le client par le prénom seul",
+      "Un même prénom peut correspondre à plusieurs dates d'inscription",
+      "DF uniquement entre attributs de même domaine"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Un attribut ne dépend que d'un attribut clé primaire",
+      "On ne peut pas déterminer le client par le prénom seul",
+      "Un même prénom peut correspondre à plusieurs dates d'inscription"
+    ]
+  },
+  {
+    "id": "p2023_58",
+    "question": "CLIENT/COMMANDE (FK numeroDuClient). Cardinalité côté Client dans le MCD ?",
+    "options": [
+      "(1,1)",
+      "(n,m)",
+      "(0,n)",
+      "(0,1)"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "(0,n)"
+  },
+  {
+    "id": "p2023_59",
+    "question": "Comment représente-t-on une contrainte d'intégrité référentielle ?",
+    "options": [
+      "Une clé étrangère",
+      "Une clé primaire",
+      "Clé étrangère + clé primaire",
+      "Une clé composée"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Une clé étrangère"
+  },
+  {
+    "id": "p2023_60",
+    "question": "Une relation est en 1FN si :",
+    "options": [
+      "La clé est un attribut unique",
+      "Les attributs de la clé sont atomiques",
+      "Un attribut dépend de la totalité de la clé",
+      "Tous ses attributs sont atomiques"
+    ],
+    "sourceFile": "DE P2023 - Bases de Données (TI603, 27/05/2021)",
+    "correctAnswer": "Tous ses attributs sont atomiques"
+  }
+]

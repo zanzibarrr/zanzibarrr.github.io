@@ -1,0 +1,628 @@
+[
+  {
+    "id": "de_bdd_01",
+    "question": "Une table est en 2FN si elle est en 1FN et :",
+    "options": [
+      "Il n'y a pas de valeurs nulles dans les champs de la clé primaire",
+      "Il n'y a pas d'attributs qui ne dépendent pas fonctionnellement de toute la clé primaire",
+      "Il n'y a pas de groupes répétitifs",
+      "Il n'y a pas de dépendances fonctionnelles"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Il n'y a pas d'attributs qui ne dépendent pas fonctionnellement de toute la clé primaire"
+  },
+  {
+    "id": "de_bdd_02",
+    "question": "En normalisant une relation en deux relations, que faire pour l'intégrité ?",
+    "options": [
+      "Créer une ou plusieurs clés primaires pour la nouvelle relation",
+      "Relier les relations par un champ commun",
+      "Supprimer toute dépendance fonctionnelle des deux relations",
+      "Attribuer aux deux relations le même champ de clé primaire"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Créer une ou plusieurs clés primaires pour la nouvelle relation",
+      "Relier les relations par un champ commun"
+    ]
+  },
+  {
+    "id": "de_bdd_03",
+    "question": "Entité Personne (ID_Personne, Nom, ADRESSE_RUE_VILLE_CP) — on peut dire que :",
+    "options": [
+      "Aucune des autres réponses",
+      "Elle est en 1FN",
+      "Elle est en 3FN",
+      "Elle est en 2FN"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Aucune des autres réponses"
+  },
+  {
+    "id": "de_bdd_04",
+    "question": "Employe(NumE PK, NumDep, NumChef, Nom...). SELECT Nom FROM Employe WHERE NumChef IS NULL — résultat ?",
+    "options": [
+      "Aucun résultat (FK ne peut être NULL)",
+      "Erreur (FK ne peut être NULL)",
+      "Nom du PDG (employé sans patron)",
+      "Tous les noms d'employés"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Nom du PDG (employé sans patron)"
+  },
+  {
+    "id": "de_bdd_05",
+    "question": "La clé primaire d'une entité peut être composée de plusieurs champs :",
+    "options": [
+      "Non",
+      "Oui"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Oui"
+  },
+  {
+    "id": "de_bdd_06",
+    "question": "Les cardinalités déterminent le :",
+    "options": [
+      "Le nombre min et max de fois qu'une entité peut participer à une relation",
+      "L'intervalle des valeurs d'un attribut",
+      "Le nombre min et max de tables liées par une relation"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Le nombre min et max de fois qu'une entité peut participer à une relation"
+  },
+  {
+    "id": "de_bdd_07",
+    "question": "Une relation dans un MCD est transformée en une table dans le MLD :",
+    "options": [
+      "Oui",
+      "Pas nécessairement",
+      "Non"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Pas nécessairement"
+  },
+  {
+    "id": "de_bdd_08",
+    "question": "Dans les SGBD relationnels, la normalisation permet de :",
+    "options": [
+      "Vérifier une norme CE/ISO",
+      "Vérifier la conformité aux opérations de l'entreprise",
+      "Minimiser la redondance et assurer la cohérence",
+      "Aucune des autres réponses"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Minimiser la redondance et assurer la cohérence"
+  },
+  {
+    "id": "de_bdd_09",
+    "question": "Commandes ORDER sans client correspondant dans CUSTOMER :",
+    "options": [
+      "Select order_id from CUSTOMER where order_id NOT IN (select customer_id from CUSTOMER)",
+      "Select * from ORDER where all customer is null",
+      "Select order_id from ORDER where order_id is null",
+      "Select order_id from ORDER where customer_id NOT IN (select customer_id from CUSTOMER)"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Select order_id from ORDER where customer_id NOT IN (select customer_id from CUSTOMER)"
+  },
+  {
+    "id": "de_bdd_10",
+    "question": "Élément pour créer/supprimer la structure des relations :",
+    "options": [
+      "TCL",
+      "DCL",
+      "DML",
+      "DDL"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "DDL"
+  },
+  {
+    "id": "de_bdd_11",
+    "question": "Pour créer une requête en BDD relationnelle, je dois connaître :",
+    "options": [
+      "La ou les tables utilisées",
+      "Le nombre d'enregistrements",
+      "La date de création de la BDD",
+      "Les champs dont j'ai besoin"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "La ou les tables utilisées",
+      "Les champs dont j'ai besoin"
+    ]
+  },
+  {
+    "id": "de_bdd_12",
+    "question": "Une clé primaire :",
+    "options": [
+      "Est un champ qui n'accepte pas les doublons",
+      "Est toujours le premier enregistrement",
+      "Permet d'identifier de façon unique un enregistrement"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Est un champ qui n'accepte pas les doublons",
+      "Permet d'identifier de façon unique un enregistrement"
+    ]
+  },
+  {
+    "id": "de_bdd_13",
+    "question": "Dans une BDD, une clé primaire est utilisée pour :",
+    "options": [
+      "Enregistrer une base de données",
+      "Identifier les informations pour les retrouver",
+      "Désigner un programme"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Identifier les informations pour les retrouver"
+  },
+  {
+    "id": "de_bdd_14",
+    "question": "Qu'est-ce que le langage SQL ?",
+    "options": [
+      "Langage de conception",
+      "Langage de description de documents",
+      "Langage de manipulation des données (interactif ou hôte)",
+      "Langage de modélisation conceptuelle"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Langage de manipulation des données (interactif ou hôte)"
+  },
+  {
+    "id": "de_bdd_15",
+    "question": "Laquelle contient une erreur ?",
+    "options": [
+      "Select empid from emp where empid = 89",
+      "Select * from emp where empid = 107",
+      "Select empid where empid = 176 and lastname = 'GELLER'",
+      "Select empid from emp"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Select empid where empid = 176 and lastname = 'GELLER'"
+  },
+  {
+    "id": "de_bdd_16",
+    "question": "Commande pour supprimer une relation en SQL :",
+    "options": [
+      "Drop table",
+      "Delete",
+      "Purge",
+      "Remove"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Drop table"
+  },
+  {
+    "id": "de_bdd_17",
+    "question": "Avec UNION, chaque requête doit produire le même nombre de colonnes compatibles :",
+    "options": [
+      "Faux",
+      "Vrai"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Vrai"
+  },
+  {
+    "id": "de_bdd_18",
+    "question": "L'opération ___ fusionne des tuples de deux relations en un tuple :",
+    "options": [
+      "Union",
+      "Join",
+      "Intersection",
+      "Select"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Join"
+  },
+  {
+    "id": "de_bdd_19",
+    "question": "L'opérateur ___ renvoie les lignes présentes dans les deux résultats :",
+    "options": [
+      "Difference",
+      "Projection",
+      "Intersect",
+      "Union"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Intersect"
+  },
+  {
+    "id": "de_bdd_20",
+    "question": "Dans quelle FN un attribut composite est converti en attributs individuels ?",
+    "options": [
+      "2FN",
+      "3FN",
+      "1FN"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "1FN"
+  },
+  {
+    "id": "de_bdd_21",
+    "question": "AUTOCOMMIT activé : modifications automatiques en fin de chaque instruction SQL :",
+    "options": [
+      "Vrai",
+      "Faux"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Vrai"
+  },
+  {
+    "id": "de_bdd_22",
+    "question": "Vue ordersview (jointure orders, customer, agents). UPDATE ordersview SET cust_name='Harry' WHERE ord_num=121137 :",
+    "options": [
+      "Impossible : vue avec jointures non modifiable",
+      "Met à jour tous les customer où ord_num=121137",
+      "Met à jour uniquement clients dans la vue",
+      "Une vue ne peut jamais être mise à jour"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Impossible : vue avec jointures non modifiable"
+  },
+  {
+    "id": "de_bdd_23",
+    "question": "Instruction pour supprimer les droits d'un utilisateur :",
+    "options": [
+      "REVOKE",
+      "REMOVE",
+      "UNGRANT",
+      "FORBID"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "REVOKE"
+  },
+  {
+    "id": "de_bdd_24",
+    "question": "Qu'est-ce qu'une transaction ?",
+    "options": [
+      "Un groupe de données dans la même structure",
+      "Jeu de résultats d'une requête stockée",
+      "Structure pour retrouver rapidement des données",
+      "Séquence d'opérations : tout valider ou tout annuler"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Séquence d'opérations : tout valider ou tout annuler"
+  },
+  {
+    "id": "de_bdd_25",
+    "question": "Niveau d'isolation qui n'existe pas dans MySQL InnoDB :",
+    "options": [
+      "REPEATABLE READ",
+      "COMMITABLE",
+      "READ UNCOMMITTED",
+      "SERIALIZABLE"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "COMMITABLE"
+  },
+  {
+    "id": "de_bdd_26",
+    "question": "autocommit=false : 3 INSERT, ROLLBACK, 2 INSERT, COMMIT, 1 INSERT — quels enregistrements dans Person ?",
+    "options": [
+      "Aucun",
+      "Seules Mary et Dorra",
+      "Tous",
+      "Hellen, Gary, Wayne, Mary et Dorra",
+      "Mary, Dorra et Suzy",
+      "Hellen, Gary et Wayne"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Seules Mary et Dorra"
+  },
+  {
+    "id": "de_bdd_27",
+    "question": "MCD Employee/Department (voir contexte) — affirmation correcte :",
+    "options": [
+      "Un employé peut travailler dans plusieurs départements",
+      "Un employé peut n'appartenir à aucun département",
+      "Un département peut ne pas avoir d'employés",
+      "Un employé ne travaille que dans un seul département"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Un employé ne travaille que dans un seul département"
+  },
+  {
+    "id": "de_bdd_28",
+    "question": "MCD — is_manager_of / Department :",
+    "options": [
+      "Un employé manager de plusieurs départements",
+      "Chaque employé manager d'au moins un département",
+      "Chaque département a au moins un manager",
+      "Un manager peut être d'un autre type qu'employé"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Chaque département a au moins un manager"
+  },
+  {
+    "id": "de_bdd_29",
+    "question": "MCD — Department / Project / works_on :",
+    "options": [
+      "Un projet doit appartenir à un département",
+      "Chaque département a au moins un projet",
+      "Un département peut avoir plusieurs projets",
+      "Chaque employé travaille sur au moins un projet",
+      "Un projet a au moins un employé qui travaille dessus"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Un département peut avoir plusieurs projets",
+      "Un projet a au moins un employé qui travaille dessus"
+    ]
+  },
+  {
+    "id": "de_bdd_30",
+    "question": "Combien de tables en passant ce MCD en MLD ?",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "4"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "7"
+  },
+  {
+    "id": "de_bdd_31",
+    "question": "Combien d'attributs la table « has » contiendra-t-elle ?",
+    "options": [
+      "2",
+      "Aucune (pas de table has)",
+      "3",
+      "1"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "2"
+  },
+  {
+    "id": "de_bdd_32",
+    "question": "Vrai ou faux : is_manager_of devient une table dans le MLD ?",
+    "options": [
+      "Vrai (relation 1-1)",
+      "Faux (pas N-N)",
+      "Vrai (attribut since)",
+      "Faux (employé zéro département)"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Vrai (attribut since)"
+  },
+  {
+    "id": "de_bdd_33",
+    "question": "Affirmation correcte (Employee / Child / in_charge_of) :",
+    "options": [
+      "Employee aura FK Child_id",
+      "Child aura FK Employee_id",
+      "in_charge_of aura FK Child_id et Employee_id"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Child aura FK Employee_id"
+  },
+  {
+    "id": "de_bdd_34",
+    "question": "Dans le MLD, la table Employee contient une et une seule clé étrangère :",
+    "options": [
+      "Faux",
+      "Vrai"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Vrai"
+  },
+  {
+    "id": "de_bdd_35",
+    "question": "Design 1 (voir contexte) — quelle FN respecte-t-il initialement ?",
+    "options": [
+      "1FN",
+      "Aucune",
+      "1FN et 3FN",
+      "2FN"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Aucune"
+  },
+  {
+    "id": "de_bdd_36",
+    "question": "Design 1 — affirmations correctes :",
+    "options": [
+      "Une commande ne concerne qu'un seul client",
+      "Une commande peut avoir plusieurs dates",
+      "Une commande peut avoir plusieurs quantités",
+      "Une commande dans plus d'un État",
+      "Une commande peut contenir plusieurs produits"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Une commande ne concerne qu'un seul client",
+      "Une commande peut avoir plusieurs quantités",
+      "Une commande peut contenir plusieurs produits"
+    ]
+  },
+  {
+    "id": "de_bdd_37",
+    "question": "Design 1 — colonne(s) ne respectant pas la 1FN ?",
+    "options": [
+      "Qty",
+      "PID",
+      "Aucune (respecte 1FN)",
+      "CID",
+      "P_Desc",
+      "C_Name",
+      "P_Price"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "Qty",
+      "PID",
+      "P_Desc",
+      "P_Price"
+    ]
+  },
+  {
+    "id": "de_bdd_38",
+    "question": "Combien de tables après normalisation du Design 1 (voir DF) ?",
+    "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "4"
+  },
+  {
+    "id": "de_bdd_39",
+    "question": "Design 2 — clé candidate de Order ?",
+    "options": [
+      "{OID, CID}",
+      "CID",
+      "{OID, PID}",
+      "PID",
+      "OID"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "{OID, PID}"
+  },
+  {
+    "id": "de_bdd_40",
+    "question": "Design 2 respecte quelle FN ?",
+    "options": [
+      "3FN",
+      "1FN",
+      "Aucune",
+      "2FN"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "1FN"
+  },
+  {
+    "id": "de_bdd_41",
+    "question": "Quelle DF brise la 2FN dans Design 2 ?",
+    "options": [
+      "OID -> CID",
+      "CID -> C_Name",
+      "PID, OID -> Qty",
+      "Aucune (déjà 2FN)"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "OID -> CID"
+  },
+  {
+    "id": "de_bdd_42",
+    "question": "Affirmation correcte sur Design 2 :",
+    "options": [
+      "Design 2 est 3FN",
+      "Order n'est pas 2FN donc Design 2 n'est pas 3FN",
+      "Pas 3FN car Qty ne dépend que de la commande",
+      "Pas 3FN car CID dépend de PID"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Order n'est pas 2FN donc Design 2 n'est pas 3FN"
+  },
+  {
+    "id": "de_bdd_43",
+    "question": "Décomposer Order (Design 2) pour obtenir 2FN :",
+    "options": [
+      "Design 2 déjà 2FN",
+      "Order_Customer (OID,CID) + Order_Product (OID,PID,O_Date,Qty)",
+      "Order (OID,O_Date) + Order_Customer (OID,PID,CID) + Order_Product (OID,PID,Qty)",
+      "Order (OID, CID, O_Date) + Order_Product (OID, PID, Qty)"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Order (OID, CID, O_Date) + Order_Product (OID, PID, Qty)"
+  },
+  {
+    "id": "de_bdd_44",
+    "question": "Films en français (schéma FILM/PERSON — voir contexte) :",
+    "options": [
+      "select * from FILM where language='French'",
+      "insert details into FILM where language='French'",
+      "select * from FILM, PERSON where language='French'",
+      "select details from FILM where language='French'"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "select * from FILM where language='French'"
+  },
+  {
+    "id": "de_bdd_45",
+    "question": "Nom(s) des acteurs du film 'Subway' :",
+    "options": [
+      "select name from FILM, PERSON, PLAYS_IN where FILM.id=PLAYS_IN.id_film and PERSON.id=PLAYS_IN.id_person and FILM.title='Subway'",
+      "select name from FILM join PERSON join PLAYS_IN on FILM.id=PLAYS_IN.id_film and PERSON.id=PLAYS_IN.id_person where FILM.title='Subway'",
+      "select name from FILM f, PERSON p, PLAYS_IN pi where f.id=pi.id_film and p.id=pi.id_person and f.title='Subway'"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "select name from FILM, PERSON, PLAYS_IN where FILM.id=PLAYS_IN.id_film and PERSON.id=PLAYS_IN.id_person and FILM.title='Subway'",
+      "select name from FILM join PERSON join PLAYS_IN on FILM.id=PLAYS_IN.id_film and PERSON.id=PLAYS_IN.id_person where FILM.title='Subway'",
+      "select name from FILM f, PERSON p, PLAYS_IN pi where f.id=pi.id_film and p.id=pi.id_person and f.title='Subway'"
+    ]
+  },
+  {
+    "id": "de_bdd_46",
+    "question": "Pays des films budget > 50000000 (chaque pays une fois) :",
+    "options": [
+      "select country from FILM where budget>50000000 and display='ONCE'",
+      "select UNIQUE country from FILM where budget>50000000",
+      "select DISTINCT country from FILM where budget>50000000"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "select DISTINCT country from FILM where budget>50000000"
+  },
+  {
+    "id": "de_bdd_47",
+    "question": "Titre et année des films sortis entre 1990 et 2000 (inclus) :",
+    "options": [
+      "select title, release_year from FILM where release_year between 1990 and 2000",
+      "select title, release_year from FILM where release_year>1990 and release_year<2000",
+      "select title, release_year from PERSON where release_year>=1990 and release_year<=2000"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "select title, release_year from FILM where release_year between 1990 and 2000"
+  },
+  {
+    "id": "de_bdd_48",
+    "question": "Que fait : select country, SUM(budget) from FILM where release_year>2000 group by country having AVG(budget)>10000000 ?",
+    "options": [
+      "Budget total films après 2000 avec budget > 10M par pays",
+      "Par pays : budget total après 2000 si budget moyen du pays > 10M",
+      "Par pays : budget total si chaque film > 10M en moyenne"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Par pays : budget total après 2000 si budget moyen du pays > 10M"
+  },
+  {
+    "id": "de_bdd_49",
+    "question": "select name as director from PERSON join DIRECTS using(id_person) :",
+    "options": [
+      "Crée colonne director dans PERSON",
+      "Noms des réalisateurs",
+      "Erreur : pas de colonne id_person dans PERSON",
+      "Erreur : DIRECTS ne peut pas joindre PERSON"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "correctAnswer": "Erreur : pas de colonne id_person dans PERSON"
+  },
+  {
+    "id": "de_bdd_50",
+    "question": "Équivalent(s) de : select * from FILM where release_year between 1990 and 2000",
+    "options": [
+      "release_year >= 1990 OR release_year <= 2000",
+      "release_year >= 1990 AND release_year <= 2000",
+      "release_year >= 1990 UNION release_year <= 2000",
+      "release_year >= 1990 INTERSECT release_year <= 2000"
+    ],
+    "sourceFile": "DE BDD - TI503 Bases de Données Avancées (27/11/2021)",
+    "multiple": true,
+    "correctAnswers": [
+      "release_year >= 1990 AND release_year <= 2000",
+      "release_year >= 1990 INTERSECT release_year <= 2000"
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Bases de Données</title>
+    <link rel="stylesheet" href="css/qcm.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>QCM Bases de Données Avancées</h1>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-text"></p>
+        </header>
+        <main>
+            <div id="question-section" class="hidden">
+                <aside id="question-context" class="question-context hidden" aria-label="Contexte de l'exercice"></aside>
+                <div id="question-card">
+                    <p id="question-number" class="question-number"></p>
+                    <h2 id="question-title"></h2>
+                    <small id="question-source" class="source-file"></small>
+                    <p id="multi-hint" class="hidden multi-hint">Plusieurs réponses possibles — sélectionnez toutes les bonnes réponses, puis validez.</p>
+                    <div id="options-area"></div>
+                </div>
+                <div id="feedback-area" class="hidden">
+                    <p id="feedback-text"></p>
+                </div>
+                <button id="validate-button" class="hidden">Valider ma réponse</button>
+                <button id="next-button" class="hidden">Question Suivante</button>
+            </div>
+            <div id="start-area">
+                <h2>Choisissez un QCM :</h2>
+                <div class="quiz-choices">
+                    <button id="start-de-2425-button" class="quiz-choice-btn" disabled>Chargement...</button>
+                    <button id="start-de-2324-button" class="quiz-choice-btn" disabled>Chargement...</button>
+                    <button id="start-de-p2023-button" class="quiz-choice-btn" disabled>Chargement...</button>
+                    <button id="start-de-de-bdd-button" class="quiz-choice-btn" disabled>Chargement...</button>
+                </div>
+                <p class="quiz-description">Questions dans l'ordre du sujet — correction officielle</p>
+            </div>
+            <div id="results-area" class="hidden">
+                <h2>Résultats</h2>
+                <p>Votre score : <span id="score"></span>/<span id="total-questions-in-quiz"></span></p>
+                <p id="percentage"></p>
+                <button id="restart-button">Choisir un autre QCM</button>
+                <h3>Détail des réponses :</h3>
+                <div id="correct-answers-summary"></div>
+            </div>
+        </main>
+        <footer>
+            <p><a href="index.html">Retour au menu</a></p>
+        </footer>
+    </div>
+    <script src="contexts-exam.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

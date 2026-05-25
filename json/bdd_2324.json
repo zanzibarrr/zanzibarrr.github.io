@@ -1,0 +1,665 @@
+[
+  {
+    "id": "bdd2324_01",
+    "question": "Quel est l'objectif principal de la normalisation dans la conception d'une base de données ?",
+    "options": [
+      "Dupliquer les données pour assurer la redondance",
+      "Réduire la redondance et éviter les anomalies de dépendance",
+      "Accroître la rapidité des requêtes",
+      "Simplifier la structure et la conception de la base de données"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Réduire la redondance et éviter les anomalies de dépendance"
+  },
+  {
+    "id": "bdd2324_02",
+    "question": "Quelle propriété ne fait PAS partie des propriétés ACID des transactions de base de données ?",
+    "options": [
+      "Atomicité",
+      "Cohérence",
+      "Durabilité",
+      "Distribution"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Distribution"
+  },
+  {
+    "id": "bdd2324_03",
+    "question": "Qu'est-ce qu'une vue dans un système de gestion de base de données ?",
+    "options": [
+      "Une table physique créée à partir du résultat d'une requête",
+      "Une table virtuelle créée par une requête stockée",
+      "Un élément d'interface utilisateur pour afficher les données",
+      "Un type d'autorisation d'accès aux bases de données"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Une table virtuelle créée par une requête stockée"
+  },
+  {
+    "id": "bdd2324_04",
+    "question": "Quelle affirmation est vraie à propos des droits d'accès à la base de données ?",
+    "options": [
+      "Ils sont définis automatiquement par le système de base de données.",
+      "Ils ne peuvent pas être révoqués une fois qu'ils ont été accordés.",
+      "Ils déterminent ce que les utilisateurs peuvent faire avec les objets de la base de données.",
+      "Ils ne sont pas pertinents si l'utilisateur a un rôle d'administrateur."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Ils déterminent ce que les utilisateurs peuvent faire avec les objets de la base de données."
+  },
+  {
+    "id": "bdd2324_05",
+    "question": "Quand un déclencheur de base de données est-il généralement exécuté ?",
+    "options": [
+      "Lorsque les données sont lues à partir d'une table de base de données",
+      "Immédiatement avant ou après une opération de mise à jour SQL spécifiée",
+      "Pendant le processus de sauvegarde de la base de données",
+      "Une fois la connexion à la base de données établie avec succès"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Immédiatement avant ou après une opération de mise à jour SQL spécifiée"
+  },
+  {
+    "id": "bdd2324_06",
+    "question": "Qu'est-ce qu'une procédure stockée dans un système de base de données ?",
+    "options": [
+      "Ensemble d'instructions SQL permettant d'effectuer une tâche spécifique, stockées dans la base de données.",
+      "Méthode de stockage redondant des données pour en accélérer l'accès",
+      "Un processus de sauvegarde qui stocke des copies de la base de données dans des emplacements sécurisés.",
+      "Une technique de récupération de base de données"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Ensemble d'instructions SQL permettant d'effectuer une tâche spécifique, stockées dans la base de données."
+  },
+  {
+    "id": "bdd2324_07",
+    "question": "Quel est le principal avantage de la création d'un index sur une colonne de base de données ?",
+    "options": [
+      "Renforcer l'intégrité des données",
+      "Améliorer les performances des requêtes de recherche",
+      "Réduire le volume de stockage utilisé par la base de données",
+      "Sécuriser les données contre les accès non autorisés"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Améliorer les performances des requêtes de recherche"
+  },
+  {
+    "id": "bdd2324_08",
+    "question": "Dans les systèmes de base de données, quel est l'objectif principal de l'utilisation de mécanismes de contrôle de la concurrence ?",
+    "options": [
+      "Veiller à ce que toutes les transactions soient visibles par tous les utilisateurs",
+      "Éviter la perte de données en cas de panne du système",
+      "Assurer la cohérence des données dans des conditions d'accès simultané",
+      "Sauvegarder les données à intervalles réguliers"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Assurer la cohérence des données dans des conditions d'accès simultané"
+  },
+  {
+    "id": "bdd2324_09",
+    "question": "Quelle affirmation est vraie à propos de la mise à jour d'une vue en SQL ?",
+    "options": [
+      "Toutes les vues sont intrinsèquement modifiables.",
+      "Une vue ne peut être mise à jour que si elle inclut la clé primaire de la table de base.",
+      "Une vue ne peut en aucun cas être mise à jour.",
+      "Une vue peut être mise à jour si elle est basée sur une table unique et utilise de simples clauses SELECT sans renommer les colonnes."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Une vue peut être mise à jour si elle est basée sur une table unique et utilise de simples clauses SELECT sans renommer les colonnes."
+  },
+  {
+    "id": "bdd2324_10",
+    "question": "Quel est l'inconvénient potentiel de l'utilisation d'un niveau d'isolation plus élevé dans la gestion des transactions ?",
+    "options": [
+      "Cela peut entraîner une augmentation de la contention des verrous et une réduction de la concurrence.",
+      "Cela diminue la fiabilité de la transaction.",
+      "Cela permet des pannes plus fréquentes de la base de données.",
+      "Cela réduit le besoin de mécanismes de rollback et de récupération."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Cela peut entraîner une augmentation de la contention des verrous et une réduction de la concurrence."
+  },
+  {
+    "id": "bdd2324_11",
+    "question": "En SQL, quels sont les cas d'utilisation courants d'un déclencheur (trigger) ?",
+    "options": [
+      "Empêcher la suppression d'enregistrements d'une table spécifique.",
+      "Mettre à jour automatiquement une table d'enregistrement (pour les statistiques ou inventaire) lorsqu'une ligne est modifiée.",
+      "Réduire le nombre de transactions par minute.",
+      "Sauvegarder la base de données tous les jours.",
+      "Appliquer des règles de gestion (business rules), telles que le calcul et la mise à jour automatiques d'un total lorsqu'un nouvel article est ajouté à une commande."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Empêcher la suppression d'enregistrements d'une table spécifique.",
+      "Mettre à jour automatiquement une table d'enregistrement (pour les statistiques ou inventaire) lorsqu'une ligne est modifiée.",
+      "Appliquer des règles de gestion (business rules), telles que le calcul et la mise à jour automatiques d'un total lorsqu'un nouvel article est ajouté à une commande."
+    ]
+  },
+  {
+    "id": "bdd2324_12",
+    "question": "Quel problème potentiel la dénormalisation de la conception d'une base de données peut-elle poser ?",
+    "options": [
+      "Complexité accrue des requêtes, qui peuvent nécessiter des jointures multiples entre plusieurs tables.",
+      "Surcharge potentielle de performance due à la nécessité d'accéder à plusieurs tables pour rassembler toutes les données nécessaires.",
+      "Risque accru d'anomalies d'insertion, de mise à jour et de suppression.",
+      "Difficultés accrues dans la mise en œuvre d'une logique qui s'étend sur plusieurs tables."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Risque accru d'anomalies d'insertion, de mise à jour et de suppression."
+  },
+  {
+    "id": "bdd2324_13",
+    "question": "Dans quel scénario une base de données peut-elle choisir de ne pas utiliser un index disponible lors de l'exécution d'une requête ?",
+    "options": [
+      "Lorsque la requête renvoie un petit sous-ensemble de lignes d'un grand tableau.",
+      "Lorsque l'index est sur une colonne avec un haut degré d'unicité.",
+      "Lorsque la requête implique un balayage complet de la table en raison d'une faible sélectivité.",
+      "Lorsque la colonne indexée est fréquemment utilisée dans la clause WHERE."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Lorsque la requête implique un balayage complet de la table en raison d'une faible sélectivité."
+  },
+  {
+    "id": "bdd2324_14",
+    "question": "Quel niveau d'isolation permet d'éviter les phénomènes de lecture, tels que les lectures non répétables, mais peut encore permettre des lectures fantômes ?",
+    "options": [
+      "Read Uncommitted",
+      "Read Committed",
+      "Repeatable Read",
+      "Serializable"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Repeatable Read"
+  },
+  {
+    "id": "bdd2324_15",
+    "question": "Comment les vues SQL peuvent-elles contribuer à la sécurité des bases de données ?",
+    "options": [
+      "En isolant physiquement le stockage des données des utilisateurs.",
+      "En limitant l'accès des utilisateurs à des lignes ou des colonnes de données spécifiques.",
+      "En cryptant les données sensibles ou confidentielles.",
+      "En sauvegardant automatiquement les données lorsqu'elles sont consultées."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "En limitant l'accès des utilisateurs à des lignes ou des colonnes de données spécifiques."
+  },
+  {
+    "id": "bdd2324_16",
+    "question": "Quelle affirmation décrit le mieux le rôle des déclencheurs dans le maintien d'une piste d'audit dans un système de base de données ?",
+    "options": [
+      "Les déclencheurs peuvent enregistrer automatiquement les modifications apportées aux données dans une table d'audit distincte.",
+      "Les déclencheurs sont principalement utilisés pour archiver les anciennes données d'audit sur des systèmes de stockage externes.",
+      "Les déclencheurs permettent d'alerter en temps réel lorsque les seuils d'audit sont dépassés.",
+      "Les déclencheurs compressent les données du journal d'audit afin de préserver l'espace de stockage de la base de données."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Les déclencheurs peuvent enregistrer automatiquement les modifications apportées aux données dans une table d'audit distincte."
+  },
+  {
+    "id": "bdd2324_17",
+    "question": "Parmi les affirmations suivantes, lesquelles sont vraies en ce qui concerne la normalisation des bases de données ?",
+    "options": [
+      "La normalisation vise principalement à réduire la redondance et à améliorer l'intégrité des données.",
+      "Le processus de normalisation se traduit généralement par une augmentation des performances pour la plupart des types de requêtes de base de données.",
+      "La normalisation peut entraîner une augmentation de la complexité des requêtes SQL en raison de la nécessité d'effectuer davantage de jointures.",
+      "La dénormalisation est parfois utilisée pour optimiser les opérations de lecture au prix d'une certaine redondance."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "La normalisation vise principalement à réduire la redondance et à améliorer l'intégrité des données.",
+      "La normalisation peut entraîner une augmentation de la complexité des requêtes SQL en raison de la nécessité d'effectuer davantage de jointures.",
+      "La dénormalisation est parfois utilisée pour optimiser les opérations de lecture au prix d'une certaine redondance."
+    ]
+  },
+  {
+    "id": "bdd2324_18",
+    "question": "Quelles sont les conséquences potentielles de l'ajout d'un index à une colonne de base de données ?",
+    "options": [
+      "Augmentation de la vitesse des opérations de lecture qui utilisent la colonne indexée dans une clause WHERE.",
+      "Augmentation de l'utilisation de l'espace disque en raison des besoins supplémentaires de stockage de l'index.",
+      "Diminution des performances des opérations d'insertion, de mise à jour et de suppression en raison de la maintenance de l'index.",
+      "Amélioration garantie des performances pour toutes les opérations au sein de la base de données."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Augmentation de la vitesse des opérations de lecture qui utilisent la colonne indexée dans une clause WHERE.",
+      "Augmentation de l'utilisation de l'espace disque en raison des besoins supplémentaires de stockage de l'index.",
+      "Diminution des performances des opérations d'insertion, de mise à jour et de suppression en raison de la maintenance de l'index."
+    ]
+  },
+  {
+    "id": "bdd2324_19",
+    "question": "Parmi les avantages suivants, lesquels sont liés à l'utilisation de transactions dans un système de base de données ?",
+    "options": [
+      "Veiller à ce que les opérations de la base de données soient traitées de manière fiable.",
+      "Correction automatique des erreurs dans les requêtes SQL.",
+      "Prise en charge de la reprise des opérations (rollback) en cas de défaillance.",
+      "Isolation des opérations pour s'assurer que les transactions n'interfèrent pas entre elles."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Veiller à ce que les opérations de la base de données soient traitées de manière fiable.",
+      "Prise en charge de la reprise des opérations (rollback) en cas de défaillance.",
+      "Isolation des opérations pour s'assurer que les transactions n'interfèrent pas entre elles."
+    ]
+  },
+  {
+    "id": "bdd2324_20",
+    "question": "Quelle affirmation décrit le mieux l'impact de l'utilisation d'un verrouillage en deux phases (2-phase locking) dans un système de base de données ?",
+    "options": [
+      "Les verrous empêchent toute forme d'accès aux données par d'autres transactions.",
+      "Les verrous garantissent qu'une seule transaction peut écrire sur les données à la fois, mais que plusieurs peuvent les lire simultanément.",
+      "Les verrous empêchent à la fois la lecture et l'écriture par d'autres transactions.",
+      "Les verrous permettent à plusieurs transactions d'écrire simultanément sur les données sans aucune restriction."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Les verrous garantissent qu'une seule transaction peut écrire sur les données à la fois, mais que plusieurs peuvent les lire simultanément."
+  },
+  {
+    "id": "bdd2324_21",
+    "question": "Parmi les fonctions SQL suivantes, lesquelles sont considérées comme des fonctions d'agrégation ?",
+    "options": [
+      "COUNT()",
+      "CONCAT()",
+      "SUM()",
+      "UPPER()",
+      "REPLACE()"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "COUNT()",
+      "SUM()"
+    ]
+  },
+  {
+    "id": "bdd2324_22",
+    "question": "Quel type d'anomalie est le plus probable lorsque la normalisation de la base de données est insuffisante ?",
+    "options": [
+      "Anomalie de lecture fantôme",
+      "Anomalie de mise à jour",
+      "Anomalie d'indexation",
+      "Anomalie de mise en cache"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Anomalie de mise à jour"
+  },
+  {
+    "id": "bdd2324_23",
+    "question": "Laquelle des propriétés ACID garantit que toutes les opérations d'une transaction donnée sont achevées avec succès, ou qu'aucune ne l'est ?",
+    "options": [
+      "Atomicité",
+      "Cohérence",
+      "Isolation",
+      "Distribution"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Atomicité"
+  },
+  {
+    "id": "bdd2324_24",
+    "question": "Quel est l'objectif principal de l'utilisation de la journalisation (logging) des transactions dans un système de base de données ?",
+    "options": [
+      "Pour améliorer les performances des requêtes",
+      "Pour assurer la cohérence des données lors d'un crash",
+      "Pour faciliter la réplication des données en temps réel",
+      "Pour gérer les autorisations d'accès à la base de données"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Pour assurer la cohérence des données lors d'un crash"
+  },
+  {
+    "id": "bdd2324_25",
+    "question": "Quels types de verrous sont couramment utilisés dans les bases de données pour gérer les accès simultanés ?",
+    "options": [
+      "Verrous de lecture",
+      "Verrous d'écriture",
+      "Verrous d'exécution",
+      "Verrous d'accès",
+      "Verrous de modification"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Verrous de lecture",
+      "Verrous d'écriture"
+    ]
+  },
+  {
+    "id": "bdd2324_26",
+    "question": "Comment un système de base de données garantit-il généralement la propriété de durabilité de l'ACID ?",
+    "options": [
+      "En utilisant efficacement la mémoire cache",
+      "En maintenant un journal des transactions (log) qui enregistre toutes les modifications",
+      "En mettant en place des autorisations strictes de lecture et d'écriture",
+      "En veillant à ce que toutes les transactions soient sans état (stateless)"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "En maintenant un journal des transactions (log) qui enregistre toutes les modifications"
+  },
+  {
+    "id": "bdd2324_27",
+    "question": "Quel est l'objectif d'une annulation (rollback) de transaction dans un système de base de données ?",
+    "options": [
+      "Dupliquer les enregistrements de transactions à des fins de sauvegarde.",
+      "Rétablir l'état précédent de la base de données en cas d'échec d'une transaction.",
+      "Accroître la vitesse de traitement des transactions.",
+      "Allouer plus de ressources système à la transaction."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Rétablir l'état précédent de la base de données en cas d'échec d'une transaction."
+  },
+  {
+    "id": "bdd2324_28",
+    "question": "Quels sont les avantages de la mise en œuvre de mécanismes de verrouillage dans une base de données ?",
+    "options": [
+      "Empêcher l'accès non autorisé aux données par certains utilisateurs.",
+      "Maintien de la cohérence de la base de données en empêchant les modifications simultanées.",
+      "Améliorer la vitesse d'exécution des requêtes complexes.",
+      "Éviter les anomalies de données lors de transactions simultanées.",
+      "Réduire les besoins de stockage de la base de données."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Maintien de la cohérence de la base de données en empêchant les modifications simultanées.",
+      "Éviter les anomalies de données lors de transactions simultanées."
+    ]
+  },
+  {
+    "id": "bdd2324_29",
+    "question": "Comment la journalisation en avance (Write-Ahead Logging) prend-elle en charge la propriété de durabilité de l'ACID dans les bases de données ?",
+    "options": [
+      "En écrivant toutes les modifications dans un journal avant qu'elles ne soient appliquées à la base de données.",
+      "En verrouillant la base de données pendant les écritures pour en empêcher l'accès.",
+      "En vidant périodiquement les données de la mémoire vers le disque.",
+      "En répliquant les transactions sur plusieurs instances de base de données."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "En écrivant toutes les modifications dans un journal avant qu'elles ne soient appliquées à la base de données."
+  },
+  {
+    "id": "bdd2324_30",
+    "question": "Parmi les éléments suivants, quels sont les niveaux d'isolation standard des transactions SQL ?",
+    "options": [
+      "Repeatable Read",
+      "Double Write",
+      "Serializable",
+      "Atomic",
+      "Commit Ready"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Repeatable Read",
+      "Serializable"
+    ]
+  },
+  {
+    "id": "bdd2324_31",
+    "question": "Quelle approche de normalisation permet de partir d'un ensemble de dépendances fonctionnelles pour atteindre plusieurs tables sans redondances ?",
+    "options": [
+      "Approche par synthèse",
+      "Approche par décomposition",
+      "Approche par contrôle"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Approche par synthèse"
+  },
+  {
+    "id": "bdd2324_32",
+    "question": "Quelle violation de la première forme normale (1FN) peut être identifiée dans la table \"SalesRecord\" ?",
+    "options": [
+      "Clé primaire composite",
+      "Attributs à valeurs multiples",
+      "Colonnes non atomiques (composées)",
+      "Répétition des groupes"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Attributs à valeurs multiples"
+  },
+  {
+    "id": "bdd2324_33",
+    "question": "Quelles colonnes de \"SalesRecord\" devraient idéalement dépendre uniquement de \"SaleID\" pour satisfaire à la deuxième forme normale (2FN) ?",
+    "options": [
+      "SaleDate",
+      "ProductID",
+      "Quantity",
+      "CustomerID",
+      "UnitPrice"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "SaleDate",
+      "CustomerID"
+    ]
+  },
+  {
+    "id": "bdd2324_34",
+    "question": "Laquelle des propositions suivantes décrit le mieux la dépendance fonctionnelle du champ Quantity dans la table \"SalesRecord\" ?",
+    "options": [
+      "Quantity est fonctionnellement dépendant de ProductID seulement.",
+      "Quantity est fonctionnellement dépendant de SaleID seulement.",
+      "Quantity est fonctionnellement dépendant de la combinaison de SaleID et ProductID.",
+      "Quantity est fonctionnellement dépendant de la combinaison de CustomerID et ProductID."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Quantity est fonctionnellement dépendant de la combinaison de SaleID et ProductID."
+  },
+  {
+    "id": "bdd2324_35",
+    "question": "Pour atteindre la troisième forme normale (3FN), quelles colonnes doivent être déplacées dans une table \"Customer\" distincte ?",
+    "options": [
+      "CustomerID",
+      "CustomerName",
+      "ProductID",
+      "UnitPrice",
+      "CustomerPhone"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "CustomerID",
+      "CustomerName",
+      "CustomerPhone"
+    ]
+  },
+  {
+    "id": "bdd2324_36",
+    "question": "Qu'est-ce qui est essentiel pour maintenir l'intégrité référentielle après avoir divisé \"SalesRecord\" en tables \"Sales\", \"Products\" et \"Customers\" ?",
+    "options": [
+      "Mise à jour régulière des clés primaires en fonction des modifications apportées aux clés étrangères",
+      "Établir des relations de clé étrangère entre les tables",
+      "Duplication des données dans les tables",
+      "Utilisation de valeurs non atomiques dans les colonnes de clés étrangères"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Établir des relations de clé étrangère entre les tables"
+  },
+  {
+    "id": "bdd2324_37",
+    "question": "Outre les tables \"Sales\", \"Products\" et \"Customers\", quelle table représente une relation plusieurs-à-plusieurs ?",
+    "options": [
+      "Table CustomerProduct",
+      "Table SaleProduct",
+      "Table CustomerSale",
+      "Il n'y a pas de relation plusieurs-à-plusieurs dans ce cas d'utilisation."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Table SaleProduct"
+  },
+  {
+    "id": "bdd2324_38",
+    "question": "Quelles dépendances fonctionnelles sont correctes dans le cas de la table SalesRecord ?",
+    "options": [
+      "ProductID -> Unit Price",
+      "SaleID -> CustomerID",
+      "SaleID, ProductID -> Quantity",
+      "SaleID -> ProductID",
+      "CustomerID -> SaleID"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "ProductID -> Unit Price",
+      "SaleID -> CustomerID",
+      "SaleID, ProductID -> Quantity"
+    ]
+  },
+  {
+    "id": "bdd2324_39",
+    "question": "Quelle est la seule clé primaire possible de la table SalesRecord telle qu'elle est, qui garantisse l'unicité des enregistrements ?",
+    "options": [
+      "SaleID",
+      "CustomerID, SaleID",
+      "ProductID",
+      "SaleID, ProductID",
+      "SaleID, CustomerID, ProductID"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "SaleID, ProductID"
+  },
+  {
+    "id": "bdd2324_40",
+    "question": "Après avoir normalisé la table SalesRecord, quelle table pourrait inclure une référence de clé étrangère à la table Customers ?",
+    "options": [
+      "Sales",
+      "Products",
+      "Une nouvelle table plusieurs-à-plusieurs appelée SaleCustomer",
+      "Aucune des autres propositions"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Sales"
+  },
+  {
+    "id": "bdd2324_41",
+    "question": "Quand le déclencheur de mise à jour d'inventaire et de journalisation doit-il s'exécuter ?",
+    "options": [
+      "Avant l'insertion dans la table Sales.",
+      "Après l'insertion dans la table Sales.",
+      "Avant la mise à jour dans la table Products.",
+      "Après la mise à jour dans la table Products."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Après l'insertion dans la table Sales."
+  },
+  {
+    "id": "bdd2324_42",
+    "question": "Quels éléments doivent figurer dans la définition du déclencheur pour qu'il fonctionne correctement ?",
+    "options": [
+      "Le mot-clé NEW pour accéder aux valeurs de la ligne insérée dans Sales.",
+      "Le mot-clé OLD pour accéder aux valeurs précédentes de Products.",
+      "Un moyen d'insérer une nouvelle ligne dans InventoryLog.",
+      "Une instruction SELECT pour récupérer les niveaux d'inventaire actuels."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "multiple": true,
+    "correctAnswers": [
+      "Le mot-clé NEW pour accéder aux valeurs de la ligne insérée dans Sales.",
+      "Un moyen d'insérer une nouvelle ligne dans InventoryLog."
+    ]
+  },
+  {
+    "id": "bdd2324_43",
+    "question": "Dans le segment de trigger MySQL ci-dessous, que doit remplacer ??? pour enregistrer correctement la variation de stock ?\nINSERT INTO InventoryLog (ProductID, ChangeType, ChangeAmount, ChangeDate) VALUES (NEW.ProductID, 'Sale', ???, NOW());",
+    "options": [
+      "NEW.QuantitySold",
+      "OLD.QuantityAvailable",
+      "NEW.QuantityAvailable",
+      "QuantityAvailable"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "NEW.QuantitySold"
+  },
+  {
+    "id": "bdd2324_44",
+    "question": "Que doit inclure la procédure UpdateInventory pour n'affecter que les enregistrements visés ?",
+    "options": [
+      "Une clause WHERE spécifiant le ProductID.",
+      "Une clause ORDER BY pour organiser les enregistrements produits.",
+      "Une clause GROUP BY pour agréger les données.",
+      "Une clause HAVING pour filtrer les résultats."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Une clause WHERE spécifiant le ProductID."
+  },
+  {
+    "id": "bdd2324_45",
+    "question": "Sans gestion d'erreurs dans UpdateInventory, quel problème si une quantité négative est passée avec l'opération « restock » ?",
+    "options": [
+      "La procédure augmenterait à tort les niveaux de stocks.",
+      "La procédure se termine et annule (rollback) toutes les modifications.",
+      "La base de données corrigera automatiquement la valeur négative.",
+      "Les niveaux d'inventaire peuvent être ajustés de manière incorrecte."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Les niveaux d'inventaire peuvent être ajustés de manière incorrecte."
+  },
+  {
+    "id": "bdd2324_46",
+    "question": "Que mettre en œuvre dans UpdateInventory pour que la quantité disponible ne devienne pas négative ?",
+    "options": [
+      "Une contrainte CHECK sur la colonne QuantityAvailable.",
+      "Une instruction IF pour vérifier l'inventaire résultant avant de valider la mise à jour.",
+      "Un déclencheur sur la table Products pour valider les quantités.",
+      "Une contrainte UNIQUE sur la colonne QuantityAvailable."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Une instruction IF pour vérifier l'inventaire résultant avant de valider la mise à jour."
+  },
+  {
+    "id": "bdd2324_47",
+    "question": "Quelle instruction SQL invoque correctement UpdateInventory pour réapprovisionner 50 unités du produit 101 ?",
+    "options": [
+      "CALL UpdateInventory(101, 50, 'restock');",
+      "EXEC UpdateInventory 101, 'restock', 50;",
+      "RUN UpdateInventory(101, 50, 'sale');",
+      "EXECUTE UpdateInventory SET ProductID = 101, Quantity = 50, OperationType = 'restock'",
+      "UpdateInventory(101, 50, 'restock');"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "CALL UpdateInventory(101, 50, 'restock');"
+  },
+  {
+    "id": "bdd2324_48",
+    "question": "Comment la fonction CalculateTotalSales traite-t-elle les cas où un produit n'a pas été vendu ?",
+    "options": [
+      "Elle renvoie NULL.",
+      "Elle renvoie le prix du produit sans multiplicateur de vente.",
+      "Elle renvoie 0.",
+      "Elle génère une erreur."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "Elle renvoie 0."
+  },
+  {
+    "id": "bdd2324_49",
+    "question": "Quel extrait SQL définit correctement la fonction CalculateTotalSales ?",
+    "options": [
+      "CREATE FUNCTION CalculateTotalSales(ProductID INT) RETURNS DECIMAL(10,2) BEGIN DECLARE totalSales DECIMAL(10,2); SELECT SUM(Price * QuantitySold) INTO totalSales FROM Products JOIN Sales ON Products.ProductID = Sales.ProductID WHERE Products.ProductID = ProductID; RETURN IFNULL(totalSales, 0); END;",
+      "CREATE FUNCTION CalculateTotalSales(ProductID INT) RETURNS DECIMAL(10,2) BEGIN RETURN (SELECT SUM(Price * QuantitySold) WHERE Products.ProductID = ProductID); END;",
+      "CREATE FUNCTION CalculateTotalSales(ProductID INT) RETURNS DECIMAL(10,2) BEGIN DECLARE totalSales DECIMAL(10,2); SELECT Price * QuantitySold INTO totalSales FROM Products, Sales WHERE Products.ProductID = Sales.ProductID; RETURN totalSales; END;",
+      "CREATE FUNCTION CalculateTotalSales(ProductID INT) RETURNS DECIMAL(10,2) BEGIN RETURN (SELECT IFNULL(SUM(Price * QuantitySold), 0) FROM Products WHERE Products.ProductID = Sales.ProductID AND Sales.ProductID = ProductID); END;"
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "CREATE FUNCTION CalculateTotalSales(ProductID INT) RETURNS DECIMAL(10,2) BEGIN DECLARE totalSales DECIMAL(10,2); SELECT SUM(Price * QuantitySold) INTO totalSales FROM Products JOIN Sales ON Products.ProductID = Sales.ProductID WHERE Products.ProductID = ProductID; RETURN IFNULL(totalSales, 0); END;"
+  },
+  {
+    "id": "bdd2324_50",
+    "question": "Si CalculateTotalSales est exécutée dans une transaction plus large, quel impact sur l'intégrité de la transaction ?",
+    "options": [
+      "La fonction verrouille en lecture les lignes des tables Sales et Products, ce qui peut entraîner un conflit de verrouillage.",
+      "La fonction n'écrit ni ne modifie les données, elle n'a donc aucun impact sur l'intégrité des transactions.",
+      "L'appel garantit que les données ne seront pas modifiées pendant son exécution en raison du niveau d'isolation.",
+      "La fonction peut faire échouer la transaction si elle accède à des lignes verrouillées."
+    ],
+    "sourceFile": "DE 23-24 - Bases de Données Avancées (TI603)",
+    "correctAnswer": "La fonction n'écrit ni ne modifie les données, elle n'a donc aucun impact sur l'intégrité des transactions."
+  }
+]
